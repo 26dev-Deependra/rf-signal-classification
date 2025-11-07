@@ -50,6 +50,7 @@ class CustomDataset(Dataset):
 
 # ================================================================
 # 2. Model Definition using Vision Mamba
+# dim = 256 each patch size,
 # ================================================================
 class VimForClassification(nn.Module):
     def __init__(self, num_classes, image_size=224, patch_size=16, dim=256, depth=12, channels=3, dropout=0.1):
